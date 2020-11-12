@@ -12,6 +12,7 @@ function preload() {
 
 function setup(){
     var canvas = createCanvas(1200,400);
+
     engine = Engine.create();
     world = engine.world;
 
@@ -39,7 +40,7 @@ function setup(){
 }
 
 function draw(){
-    background(backgroundImg);
+    background("maroon");
     Engine.update(engine);
     console.log(box2.body.position.x);
     console.log(box2.body.position.y);
